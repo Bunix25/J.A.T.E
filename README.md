@@ -73,17 +73,17 @@ The following animation demonstrates the application's functionality:
 </br>
 
 The following image shows the application's ```manifest.json``` file:
-![manifest](![Alt text](Assets/Screenshot%20manifest.png))
+![Alt text](Assets/Screenshot%20manifest.png)
 
 </br>
 The following image shows the application's registered service worker:
 
-![serviceworker](![Alt text](Assets/Screenshot%20service%20worker.png))
+![Alt text](Assets/Screenshot%20service%20worker.png)
 
 </br>
 The following image shows the application's IndexedDB storage:
 
-![idb](![Alt text](Assets/Screenshot%20IndexedDB%20storage.png))
+![Alt text](Assets/Screenshot%20IndexedDB%20storage.png)
 
 
 ## License

@@ -68,7 +68,7 @@ The following animation demonstrates the application's functionality:
 
 
 
-![J A T E ](![Alt text](Assets/Screenshot%20.png))
+![J A T E ]![Alt text](Assets/Screenshot%20.png)
 
 </br>
 

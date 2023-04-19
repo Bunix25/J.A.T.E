@@ -17,7 +17,7 @@ J.A.T.E is a Progressive Web Application (PWA) that runs in the browser, offline
 
 
 ## Installation
-This application is deployed to [Heroku](https://stark-meadow-52806.herokuapp.com/).
+This application is deployed to [Heroku](https://dry-reaches-19767.herokuapp.com/).
 
 To run J.A.T.E locally:
 

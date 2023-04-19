@@ -1,35 +1,47 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const WebpackPwaManifest = require("webpack-pwa-manifest");
+// Import necessary libraries and modules
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // HTML Webpack Plugin
+const WebpackPwaManifest = require("webpack-pwa-manifest"); // Webpack PWA Manifest
+const { InjectManifest } = require("workbox-webpack-plugin"); // Workbox Webpack Plugin
+const path = require("path"); // Node.js path module
+const WorkboxPlugin = require("workbox-webpack-plugin"); // Workbox Webpack Plugin
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Mini CSS Extract Plugin
 
-const path = require("path");
-const { InjectManifest } = require("workbox-webpack-plugin");
-
-
-const WorkboxPlugin = require("workbox-webpack-plugin");
-
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+// Export a function that returns the Webpack configuration
 module.exports = () => {
   return {
+    // Set the mode to development
     mode: "development",
+
+    // Set the entry points for the application
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
     },
+
+    // Set the output path and filename
     output: {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
+
+    // Set the plugins for the application
     plugins: [
+      // HTML Webpack Plugin
       new HtmlWebpackPlugin({
         template: "./index.html",
         title: "Webpack Plugin",
       }),
+
+      // Mini CSS Extract Plugin
       new MiniCssExtractPlugin(),
+
+      // Workbox Inject Manifest Plugin
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
+
+      // Webpack PWA Manifest Plugin
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -49,17 +61,22 @@ module.exports = () => {
         ],
       }),
     ],
+
+    // Set the rules for the application
     module: {
       rules: [
         {
+          // Load CSS files
           test: /\.css$/i,
           use: ["style-loader", "css-loader"],
         },
         {
+          // Load image files
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: "asset/resource",
         },
         {
+          // Load JavaScript files
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
@@ -77,3 +94,4 @@ module.exports = () => {
     },
   };
 };
+

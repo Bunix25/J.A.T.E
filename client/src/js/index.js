@@ -1,11 +1,14 @@
+// Import necessary libraries and modules
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
 
+// Select main element and clear its innerHTML
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
+// Function to show a spinner while content is loading
 const loadSpinner = () => {
   const spinner = document.createElement('div');
   spinner.classList.add('spinner');

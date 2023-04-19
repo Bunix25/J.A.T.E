@@ -75,5 +75,9 @@ No tests were run to complete this CMS.
 Find Sviatoslav Zakharuk on [GitHub](https://github.com/Bunix25)<br/>
 Or visit the PWA's repository: [J.A.T.E](https://github.com/Bunix25)
 
+## Resourses
+* https://stackoverflow.com/
+* https://chat.openai.com/
+
 - - -
 © 2023 Just Another Text Editor (J.A.T.E): PWA by Sviatoslav Zakharuk Creative Services, Confidential and Proprietary. All Rights Reserved.

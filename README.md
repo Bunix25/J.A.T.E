@@ -10,10 +10,9 @@ J.A.T.E is a Progressive Web Application (PWA) that runs in the browser, offline
 3. [Installation](#installation)
 4. [License](#license)
 5. [Technologies Employed](#technologies-employed)
-6. [Future Development](#future-development)
-7. [Contributing](#contributing)
-8. [Tests](#tests)
-9. [Questions](#questions)
+6. [Contributing](#contributing)
+7. [Tests](#tests)
+8. [Questions](#questions)
 
 
 ## Installation
